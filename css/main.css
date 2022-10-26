@@ -407,6 +407,52 @@ aside {
     }
   }
   
+  @media only screen and (min-width:1200px) {
+    .content-wrapper {
+      max-width: 960px;
+ }
+
+  /* Hero aka header h1*/
+ .hero-area h1 {
+     width: 60%;
+ }
+
+ /* Aside >> center */
+ aside .content-wrapper {
+     justify-content: space-around;
+ }
+
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form /* is this the email and submit button?*/ {
+     width: 30%;
+ }
+
+/* Features */
+ .features h2 {
+     width: 90%;
+ }
+
+ .features article /* 3x3 */{
+     flex-basis: 33%;
+ }
+
+ /* Reviews >>  float right*/ 
+ .reviews article div {
+     width: 42%;
+ }
+  }
+  /* About Page */
+
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+    }
+/* FAQ Page */
+   .faq h2 {
+    width: 100%;
+}
+
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
