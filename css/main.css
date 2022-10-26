@@ -97,6 +97,8 @@ textarea {
    body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
+    text-align: left;
    }
     
    ul, 
@@ -111,6 +113,7 @@ textarea {
     
    h2 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 1.87em;
    }
     
@@ -118,6 +121,9 @@ textarea {
    h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.12em;
+    font-weight: 500;
+    margin: 20px 0;
+
    }
     
    p {
@@ -145,20 +151,40 @@ textarea {
 
    header,
    footer {
+    background-color: #202322;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
    }
-   
+   header {
+    padding: 15px 0;
+  }
+
    header .content-wrapper {
+     margin: 0;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
    }
    
+   .header-divider {
+    background: #3a3a3a; 
+    height: 1px;
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+
    header nav {
+    width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -166,21 +192,48 @@ textarea {
    }
    
    header nav ul {
+    width: 100%;
      display: flex;
      justify-content: space-around;
    }
    
-   footer .social-icons {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-   }
-   
-   footer .social-icons p {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
+   header nav ul li {
+    font-size: 1.125em;
+  }
+  
+  footer {
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  }
+  
+  footer .contact {
+    margin-bottom: 50px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+footer .copyright {
+  margin: 20px 0;
+}
 
 .hero-area {
   display: flex;
@@ -323,6 +376,31 @@ aside {
   clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
