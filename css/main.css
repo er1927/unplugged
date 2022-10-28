@@ -1,8 +1,5 @@
-/* git failed to update repo, trying something out*/
-
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -84,6 +81,16 @@ fieldset {
 textarea {
   resize: vertical;
 }
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
 
 /* ==========================================================================
    Author's custom styles
@@ -105,6 +112,7 @@ textarea {
   ol {
     list-style-type: none;
     margin: 0;
+    padding: 0;
   }
    
   a {
@@ -432,11 +440,7 @@ textarea {
     margin-bottom: 50px;
   }
   
-  .faq-content {
-    margin-bottom: 50px;
-  }
-  
-  .faq-content h4 {
+   .faq-content h4 {
     line-height: 1.333;
   }
   
@@ -522,31 +526,7 @@ textarea {
   clear: both;
 }
 
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -856,12 +836,6 @@ input[type=button] {
     }
   }
   
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
